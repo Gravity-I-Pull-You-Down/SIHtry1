@@ -5,8 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -23,7 +25,6 @@ public class NRCRegisterActivity extends AppCompatActivity {
         Log.v("hello", "hello");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nrc_register);
-
         submit = (Button) findViewById(R.id.nrc_reg_submit);
         et_bed_count = (EditText) findViewById(R.id.nrc_reg_et_bed_count);
         et_bed_vacant = (EditText) findViewById(R.id.nrc_reg_et_bed_vacant);

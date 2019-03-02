@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/NRC_title"
+        android:orderInCategory="100"
+        android:icon="@drawable/back"
+        android:title="National rehablitation center"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/acccount_settings"
+        android:orderInCategory="100"
+        android:icon="@drawable/settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Bed_count"
+        android:orderInCategory="100"
+        android:title="Bed Count"
+        android:icon="@drawable/bunk"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Bed_availablity"
+        android:orderInCategory="100"
+        android:title="Bed availablity"
+        android:icon="@drawable/bed"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/nav_contact"
+        android:orderInCategory="100"
+        android:icon="@drawable/book"
+        android:title="Contact us"
+        app:showAsAction="never" />
+
+</menu>

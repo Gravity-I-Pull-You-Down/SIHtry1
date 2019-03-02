@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">SIHtry2</string>
+    <string-array name="States">
+        <item>State</item>
+        <item>AP</item>
+        <item>Andhara Pradesh</item>
+        <item>Uttar Pradesh</item>
+        <item>qwertyuiopasdfghjklzxcvbnm</item>
+    </string-array>
+    <string-array name="City">
+        <item>City</item>
+        <item>Tirupati</item>
+        <item>Ranikunta</item>
+        <item>alalalaalalalalaalalalalalaalalala</item>
+        <item>a</item>
+    </string-array>
+    <string name="title_activity_side_drawer">side_drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Nrc Name</string>
+    <string name="nav_header_subtitle">abc@def.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
 </resources>

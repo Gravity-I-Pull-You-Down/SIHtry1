@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/tri_color"
     tools:context=".VerificationDueActivity">
 
     <TextView
@@ -12,6 +13,7 @@
         android:id="@+id/verify_tv"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:textSize="35sp"
         android:text="Verification is due" />
 
 </RelativeLayout>

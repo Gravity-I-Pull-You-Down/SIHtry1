@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/tri_color">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +20,9 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
             android:text="NRC Registration"
-            android:textSize="25sp" />
+            android:textColor="#143772"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/nrc_reg_et_bed_count"
@@ -55,7 +58,18 @@
             android:layout_marginRight="20dp"
             android:hint="Address" />
 
-        <EditText
+
+        <Spinner
+            android:id="@+id/nrc_reg_et_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="City"
+            android:entries="@array/City">
+
+        </Spinner>
+
+
+        <!--<EditText
             android:id="@+id/nrc_reg_et_city"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -69,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:hint="State" />
+            android:hint="State" />-->
 
         <EditText
             android:id="@+id/nrc_reg_et_pincode"
@@ -79,6 +93,15 @@
             android:layout_marginRight="20dp"
             android:hint="Pincode"
             android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/nrc_reg_et_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="State"
+            android:entries="@array/States">
+
+        </Spinner>
 
         <EditText
             android:id="@+id/nrc_reg_et_phone"
