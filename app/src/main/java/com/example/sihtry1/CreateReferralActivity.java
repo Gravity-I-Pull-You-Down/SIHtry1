@@ -24,12 +24,12 @@ public class CreateReferralActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_referral);
 
         create_referral_btn_submit = (Button) findViewById(R.id.create_referral_btn_submit);
-        create_referral_btn_pick_name = (Button) findViewById(R.id.create_referral_btn_submit);
-        create_referral_et_parent_name = (EditText) findViewById(R.id.create_referral_btn_submit);
-        create_referral_et_child_f_name = (Button) findViewById(R.id.create_referral_btn_submit);
-        create_referral_et_l_name = (EditText) findViewById(R.id.create_referral_btn_submit);
-        create_referral_rb__child_male = (RadioButton) findViewById(R.id.create_referral_btn_submit);
-        create_referral_rb_child_female = (RadioButton) findViewById(R.id.create_referral_btn_submit);
+        create_referral_btn_pick_name = (Button) findViewById(R.id.create_referral_btn_pick_date);
+        create_referral_et_parent_name = (EditText) findViewById(R.id.create_referral_et_parent_name);
+        create_referral_et_child_f_name = (EditText) findViewById(R.id.create_referral_et_child_f_name);
+        create_referral_et_l_name = (EditText) findViewById(R.id.create_referral_et_child_l_name);
+        create_referral_rb__child_male = (RadioButton) findViewById(R.id.create_referral_rb_child_male);
+        create_referral_rb_child_female = (RadioButton) findViewById(R.id.create_referral_rb_child_female);
         create_referral_rb_child_other = (RadioButton) findViewById(R.id.create_referral_btn_submit);
         create_referral_et_symptoms = (EditText) findViewById(R.id.create_referral_btn_submit);
         create_referral_et_blodgp = (EditText) findViewById(R.id.create_referral_btn_submit);
@@ -42,7 +42,8 @@ public class CreateReferralActivity extends AppCompatActivity {
         create_referral_et_aadhaar_num = (EditText) findViewById(R.id.create_referral_btn_submit);
         create_referral_et_add = (EditText) findViewById(R.id.create_referral_btn_submit);
         create_referral_et_pin = (EditText) findViewById(R.id.create_referral_btn_submit);
-        create_referral_tv_date = (Button) findViewById(R.id.create_referral_btn_submit);
+        create_referral_tv_date = (TextView) findViewById(R.id.create_referral_btn_submit);
+
         create_referral_btn_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
