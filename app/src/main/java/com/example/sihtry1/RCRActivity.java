@@ -1,5 +1,6 @@
 package com.example.sihtry1;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +11,10 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 public class RCRActivity extends AppCompatActivity {
 
@@ -31,7 +36,12 @@ public class RCRActivity extends AppCompatActivity {
     }
 
     private void registerChild() {
-        Intent intent = new Intent();
+        IMainActivity iMainActivity = new IMainActivity();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/M/yyyy");
+        String date = dateFormat.format(Calendar.getInstance().getTime());
+        iMainActivity.createNewReferral(getApplicationContext(), "dfbdfvb", "zdfvbzfb", "zdbvdzb", "zvzsfvb", FirebaseAuth.getInstance().getCurrentUser().getUid(), "dvbdbb",
+                "564132156", "m", "fvgdfvbdfbv", Calendar.getInstance().getTime(), "zdsfvdfv", (float) 12.2, (float) 12.2, (float) 12.2,
+                "s4vt56w56", "s4vt56w56", "s4vt56w56", "s4vt56w56", 231456);
     }
 
     @Override
@@ -42,11 +52,9 @@ public class RCRActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
+    public boolean onOptionsItemSelected(MenuItem item) {
 
-        switch (item.getItemId())
-        {
+        switch (item.getItemId()) {
             case R.id.main_menu_signout:
                 FirebaseAuth.getInstance().signOut();
                 Intent intent = new Intent(this, LoginActivity.class);
