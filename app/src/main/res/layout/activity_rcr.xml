@@ -4,28 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/tri_color"
+    android:orientation="vertical"
     tools:context=".RCRActivity">
 
-    <Button
-        android:id="@+id/rcr_btn_create_new_ref"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Create New Referral" />
+        android:orientation="vertical"
+        android:background="@drawable/container"
+        android:layout_marginVertical="100dp"
+        android:layout_marginHorizontal="20dp">
 
-    <Button
-        android:id="@+id/rcr_btn_nrc_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="List of NRC's" />
+        <Button
+            android:id="@+id/rcr_btn_create_new_ref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/login_button"
+            android:layout_marginHorizontal="50dp"
+            android:text="Create New Referral" />
 
-    <Button
-        android:id="@+id/rcr_btn_update_profile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Update referral profile" />
+        <Button
+            android:id="@+id/rcr_btn_nrc_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="50dp"
+            android:text="List of NRC's" />
+
+        <Button
+            android:id="@+id/rcr_btn_update_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="50dp"
+            android:text="Update referral profile" />
+    </LinearLayout>
 </LinearLayout>

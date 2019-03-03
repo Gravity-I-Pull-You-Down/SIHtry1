@@ -27,310 +27,320 @@
                 android:textColor="#143772"
                 android:textSize="25sp"
                 android:textStyle="bold" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/container"
                 android:orientation="vertical">
 
-                <EditText
-                    android:id="@+id/create_referral_et_parent_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:backgroundTint="#000"
-                    android:hint="Guardian Name" />
 
-                <EditText
-                    android:id="@+id/create_referral_et_child_f_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:backgroundTint="#000"
-                    android:hint="Child First name" />
-
-                <EditText
-                    android:id="@+id/create_referral_et_child_l_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:hint="Child Last name" />
-            </LinearLayout>
-
-            <RelativeLayout
+            <EditText
+                android:id="@+id/create_referral_et_parent_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#000"
+                android:hint="Guardian Name" />
 
-                <TextView
-                    android:id="@+id/gender_genric"
+            <EditText
+                android:id="@+id/create_referral_et_child_f_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#000"
+                android:hint="Child First name" />
+
+            <EditText
+                android:id="@+id/create_referral_et_child_l_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Child Last name" />
+
+
+
+
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:text="Gender"
-                    android:textStyle="bold" />
+                    android:layout_height="wrap_content">
 
-
-                <RadioGroup
-                    android:id="@+id/gender_child"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    android:layout_below="@+id/gender_genric"
-
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:orientation="horizontal"
-
-                    android:textAlignment="center">
-
-                    <!--<LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">-->
-
-
-                    <!--<LinearLayout
+                    <TextView
+                        android:id="@+id/gender_genric"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">-->
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Gender"
+                        android:textStyle="bold" />
 
-                    <RadioButton
-                        android:id="@+id/create_referral_rb_child_male"
-                        android:layout_width="wrap_content"
+
+                    <RadioGroup
+                        android:id="@+id/gender_child"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Male" />
 
-                    <RadioButton
-                        android:id="@+id/create_referral_rb_child_female"
-                        android:layout_width="wrap_content"
+                        android:layout_below="@+id/gender_genric"
+
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal"
+
+                        android:textAlignment="center">
+
+                        <!--<LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_toRightOf="@+id/create_referral_rb_child_male"
-                        android:layout_weight="1"
-                        android:text="Female" />
-
-                    <RadioButton
-                        android:id="@+id/create_referral_rb_child_other"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_toRightOf="@+id/create_referral_rb_child_female"
-                        android:layout_weight="1"
-                        android:text="Other" />
-                    <!--</LinearLayout>-->
-                </RadioGroup>
-
-            </RelativeLayout>
-            <!--</LinearLayout>-->
-
-            <!--<EditText
-                android:id="@+id/dob"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:hint="Date of Birth"
-                android:inputType="date" />-->
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="30dp"
-                android:paddingRight="30dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
-                    android:layout_centerVertical="true"
-                    android:text="22-10-2022" />
-
-                <Button
-                    android:id="@+id/create_referral_et_date_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentRight="true"
-                    android:background="@drawable/btn1"
-                    android:text="Pick D.O.B" />
-            </RelativeLayout>
-
-            <EditText
-                android:id="@+id/create_referral_et_symptoms"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:hint="Symptom" />
-
-            <EditText
-                android:id="@+id/create_referral_et_bloodgp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:hint="Blood Group" />
-
-            <!--<ImageButton
-                android:id="@+id/add_symptom"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignParentRight="true"
-                android:layout_gravity="right"
-                android:layout_marginLeft="170dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/addd" />-->
+                        android:orientation="vertical">-->
 
 
-            <EditText
-                android:id="@+id/create_referral_et_ashamsmt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:hint="Asha Tape Measurement"
-                android:inputType="number" />
+                        <!--<LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">-->
 
-            <EditText
-                android:id="@+id/create_referral_et_height"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:hint="Height"
-                android:inputType="number" />
+                        <RadioButton
+                            android:id="@+id/create_referral_rb_child_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Male" />
 
-            <EditText
-                android:id="@+id/create_referral_et_pin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:hint="Pincode"
-                android:inputType="number" />
+                        <RadioButton
+                            android:id="@+id/create_referral_rb_child_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/create_referral_rb_child_male"
+                            android:layout_weight="1"
+                            android:text="Female" />
 
-            <EditText
-                android:id="@+id/create_referral_et_weight"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:hint="Weight"
-                android:inputType="number" />
+                        <RadioButton
+                            android:id="@+id/create_referral_rb_child_other"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/create_referral_rb_child_female"
+                            android:layout_weight="1"
+                            android:text="Other" />
+                        <!--</LinearLayout>-->
+                    </RadioGroup>
 
+                </RelativeLayout>
+                <!--</LinearLayout>-->
 
-            <EditText
-                android:id="@+id/create_referral_et_aadhaar_parent"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:hint="Aadhaar of Parent"
-                android:inputType="number" />
-
-            <EditText
-                android:id="@+id/create_referral_et_aadhaar_child"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:hint="Aadhaar of Child"
-                android:inputType="number" />
-
-            <EditText
-                android:id="@+id/create_referral_et_add"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:hint="Address" />
-            <!--
-
-            <EditText
-                android:id="@+id/ct_city"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:hint="City" />
--->
-            <Spinner
-                android:id="@+id/create_referral_et_city"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:autofillHints="City"
-                android:entries="@array/City"
-                android:popupBackground="#D8D8D8">
-
-            </Spinner>
-
-            <Spinner
-                android:id="@+id/create_referral_et_state"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:autofillHints="State"
-                android:entries="@array/States"
-                android:popupBackground="#D8D8D8">
-
-            </Spinner>
-
-
-            <!--<EditText
-                android:id="@+id/ct_state"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:hint="State" />-->
-
-
-            <EditText
-                android:id="@+id/create_referral_et_phone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:hint="Phone"
-                android:inputType="number" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-              <!--  <TextView
-                    android:layout_width="wrap_content"
+                <!--<EditText
+                    android:id="@+id/dob"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="Upload Guradian photo" />
-
-                <Button
-                    android:id="@+id/photochildparent"
-                    android:layout_width="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:hint="Date of Birth"
+                    android:inputType="date" />-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="22-10-2022" />
+
+                    <Button
+                        android:id="@+id/create_referral_et_date_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/btn1"
+                        android:text="Pick D.O.B" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/create_referral_et_symptoms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Symptom" />
+
+                <EditText
+                    android:id="@+id/create_referral_et_bloodgp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Blood Group" />
+
+                <!--<ImageButton
+                    android:id="@+id/add_symptom"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginEnd="25dp"
                     android:layout_marginRight="25dp"
-                    android:background="@drawable/btn1"
-                    android:text="Browse" />
--->
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/addd" />-->
 
-            </RelativeLayout>
 
-            <Button
-                android:id="@+id/create_referral_btn_submit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/btn"
-                android:gravity="center"
-                android:text="Submit" />
+                <EditText
+                    android:id="@+id/create_referral_et_ashamsmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Asha Tape Measurement"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/create_referral_et_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Height"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/create_referral_et_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Pincode"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/create_referral_et_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Weight"
+                    android:inputType="number"/>
+
+
+                <EditText
+                    android:id="@+id/create_referral_et_aadhaar_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Aadhaar of Parent"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/create_referral_et_aadhaar_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Aadhaar of Child"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/create_referral_et_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Address" />
+                <!--
+
+                <EditText
+                    android:id="@+id/ct_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="City" />
+    -->
+                <Spinner
+                    android:id="@+id/create_referral_et_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="City"
+                    android:entries="@array/City"
+                    android:layout_marginLeft="20dp"
+                    android:popupBackground="#D8D8D8">
+
+                </Spinner>
+
+                <Spinner
+                    android:id="@+id/create_referral_et_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="State"
+                    android:layout_marginLeft="20dp"
+                    android:entries="@array/States"
+                    android:popupBackground="#D8D8D8">
+
+                </Spinner>
+
+
+                <!--<EditText
+                    android:id="@+id/ct_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="State" />-->
+
+
+                <EditText
+                    android:id="@+id/create_referral_et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Phone"
+                    android:inputType="number" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--  <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="20dp"
+                          android:text="Upload Guradian photo" />
+
+                      <Button
+                          android:id="@+id/photochildparent"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginEnd="25dp"
+                          android:layout_marginRight="25dp"
+                          android:background="@drawable/btn1"
+                          android:text="Browse" />
+      -->
+
+                </RelativeLayout>
+            </LinearLayout>
+
+                <Button
+                    android:id="@+id/create_referral_btn_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/btn"
+                    android:gravity="center"
+                    android:text="Submit" />
+
 
         </LinearLayout>
 

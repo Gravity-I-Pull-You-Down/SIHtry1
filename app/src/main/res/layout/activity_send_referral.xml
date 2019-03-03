@@ -14,7 +14,7 @@
         android:textStyle="bold"
         android:layout_marginTop="50dp"
         android:text="Nutrition Rehabilitation Center"
-        android:textSize="20sp"
+        android:textSize="13sp"
         android:textColor="#000"
         android:layout_marginLeft="10dp"
         android:id="@+id/nrc_title"/>
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:textStyle="normal"
         android:text="CHC, Fatehabad"
-        android:textSize="20sp"
+        android:textSize="13sp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:id="@+id/nrc_address"/>
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:textStyle="normal"
         android:text="Firozabad, 283203"
-        android:textSize="20sp"
+        android:textSize="13sp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:id="@+id/nrc_city"/>

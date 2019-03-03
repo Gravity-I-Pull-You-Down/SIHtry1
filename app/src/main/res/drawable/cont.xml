@@ -10,7 +10,8 @@
                 android:bottomRightRadius="40dp"
                 android:topLeftRadius="40dp"
                 android:topRightRadius="40dp" />
+
         </shape>
     </item>
-    <item android:drawable="@drawable/logo1" />
+    <item android:drawable="@drawable/bak" />
 </layer-list>

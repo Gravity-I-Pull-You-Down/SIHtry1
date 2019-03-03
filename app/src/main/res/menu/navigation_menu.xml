@@ -6,7 +6,7 @@
         android:id="@+id/NRC_title"
         android:orderInCategory="100"
         android:icon="@drawable/back"
-        android:title="@string/NRC"
+        android:title="Back"
         app:showAsAction="never"/>
 
     <item
