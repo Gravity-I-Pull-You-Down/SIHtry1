@@ -14,6 +14,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class RCRActivity extends AppCompatActivity {
 
     private Button btn_create_new_referral;
+    private Button btn_ListofNRC;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,15 @@ public class RCRActivity extends AppCompatActivity {
         setContentView(R.layout.activity_rcr);
 
         btn_create_new_referral = (Button) findViewById(R.id.rcr_btn_create_new_ref);
+        btn_ListofNRC = (Button)findViewById(R.id.rcr_btn_nrc_list);
 
+
+        btn_ListofNRC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listofnrc();
+            }
+        });
         btn_create_new_referral.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,6 +44,10 @@ public class RCRActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    private void listofnrc() {
+        Intent intent = new Intent(this, StatesActivity.class);
+        startActivity(intent);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
