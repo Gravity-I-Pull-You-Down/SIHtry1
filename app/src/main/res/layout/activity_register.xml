@@ -3,62 +3,123 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/tri_color"
     android:layout_height="match_parent"
+    android:background="@drawable/tri_color"
     android:orientation="vertical"
+    android:paddingVertical="30dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
     tools:context=".RegisterActivity">
 
-
-    <EditText
-        android:id="@+id/register_et_email"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:hint="Email"
-        android:inputType="textEmailAddress" />
+        android:layout_height="match_parent"
+        android:background="@drawable/container"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/register_et_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:hint="Password"
-        android:inputType="textPassword" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:orientation="horizontal"
-        android:text="Gender">
+            <RelativeLayout
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/logo1">
 
-        <RadioButton
-            android:id="@+id/register_radio_rcr"
-            android:layout_width="wrap_content"
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/name2">
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/register_et_email"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Angranwadi" />
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:textSize="22sp" />
 
-        <RadioButton
-            android:id="@+id/register_radio_nrc"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/register_et_password"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="NRC" />
-    </RadioGroup>
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="22sp" />
 
-    <Button
-        android:id="@+id/register_btn_register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="register" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:text="Gender">
 
-    <Button
-        android:id="@+id/register_btn_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Login" />
+            <RadioButton
+                android:id="@+id/register_radio_rcr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Angranwadi" />
+
+            <RadioButton
+                android:id="@+id/register_radio_nrc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="NRC" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/register_btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/login_button"
+                android:fontFamily="@font/login_bold"
+                android:paddingHorizontal="50dp"
+                android:textColor="#fff"
+                android:textSize="22dp"
+                android:text="register" />
+
+            <Button
+                android:id="@+id/register_btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/register_btn_register"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/login_button"
+                android:fontFamily="@font/login_bold"
+                android:paddingHorizontal="70dp"
+                android:textColor="#fff"
+                android:textSize="22dp"
+                android:text="Login" />
+        </RelativeLayout>
+    </LinearLayout>
 
 </LinearLayout>

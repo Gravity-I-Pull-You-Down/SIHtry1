@@ -11,14 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".loading"></activity>
         <activity
             android:name=".side_drawer"
             android:label="@string/title_activity_side_drawer"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".CreateReferralActivity"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CreateReferralActivity" />
         <activity android:name=".RCRRegisterActivity" />
         <activity android:name=".RCRActivity" />
-        <activity android:name=".NRCActivity"></activity>
+        <activity android:name=".NRCActivity" />
         <activity
             android:name=".VerificationDueActivity"
             android:label="Verification Due" />
